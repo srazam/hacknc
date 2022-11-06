@@ -6,7 +6,7 @@ The background color should be `#ffffff` for light mode and `#0969DA` for dark m
 ### By: Jean, Priyal, Shannon, Sofia 
 
 ## What is...What?
-For our HackNC project, students will input their name, age, gender, and preferences in order to help them meet other people. 
+For our HackNC project, college students will input their name, age, gender, and preferences in order to help them meet other people. 
 
 The preferences for food are:
 - Italian 
@@ -33,5 +33,6 @@ The preferences for activities are:
 - Other
 
 ## About the Code
+
 
 
