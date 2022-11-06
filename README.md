@@ -29,8 +29,6 @@ The preferences for activities are:
 - Park 
 - Other
 
-## About the Code
-
 
 
 
