@@ -1,3 +1,6 @@
+The background color should be `#ffffff` for light mode and `#0969DA` for dark mode.
+
+
 # What? 
 
 ### By: Jean, Priyal, Shannon, Sofia 
