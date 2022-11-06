@@ -3,7 +3,7 @@
 ### By: Jean, Priyal, Shannon, Sofia 
 
 ## What is...What?
-For our HackNC project, students will input their name, age, gender, and preferences. Their preferences will range from
+For our HackNC project, students will input their name, age, gender, and preferences in order to help them meet other people. 
 
 The preferences for food are:
 - Italian 
@@ -25,6 +25,8 @@ The preferences for activities are:
 - Bowling 
 - Arcane
 - Museum 
+- Amusement Park 
+- Park 
 - Other
 
 ## About the Code
