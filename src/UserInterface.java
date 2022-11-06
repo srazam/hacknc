@@ -32,7 +32,7 @@ public class UserInterface {
                         System.out.println("Wrong input please enter 1 or 2.");
                     }
                     if (answer == 1) {
-                        BufferedReader choicesInput = new BufferedReader( new InputStreamReader(System.in));
+                        BufferedReader foodInput = new BufferedReader( new InputStreamReader(System.in));
                         System.out.println("Setting food preferences...");
                         System.out.println("Please enter each choice's number separated by commas.");
                         System.out.println("Food Choices:");
@@ -46,10 +46,9 @@ public class UserInterface {
                         System.out.println("8) Other");
                         while(!stop){
                             try{
-                                food = choicesInput.readLine().split(",");
+                                food = foodInput.readLine().split(",");
                                 pref = new preferences();
                                 pref.addFood(pref.convertInput(food));
-                                stop = true;
                             }catch (IOException e){
                                 System.out.println("Wrong input please enter only numbers separated by commas.");
                                 System.out.println("Ex. 1,2,3,4");
@@ -69,9 +68,11 @@ public class UserInterface {
                             System.out.println("10) other");
                             while(!stop){
                                 try{
+                                    BufferedReader choicesInput = new BufferedReader( new InputStreamReader(System.in));
                                     events = choicesInput.readLine().split(",");
-                                    pref = new preferences();
                                     pref.addEvents(pref.convertInput(events));
+                                    pref.printPref();
+                                    choicesInput.close();
                                     stop = true;
                                 }catch (IOException e){
                                     System.out.println("Wrong input please enter only numbers separated by commas.");
