@@ -1,4 +1,4 @@
-# What? 
+# WhatandWhen? 
 
 ### By: Jean, Priyal, Shannon, Sofia 
 
