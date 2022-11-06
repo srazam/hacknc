@@ -15,7 +15,7 @@ public class UserInterface {
 
     public UserInterface(){
 
-        System.out.println("Welcome to WhatandWhen!");
+        System.out.println("Welcome to What is..What?");
         while(!stop) {
             System.out.println("Please enter your username.");
             System.out.println("Username: ");
@@ -32,8 +32,8 @@ public class UserInterface {
                         System.out.println("Wrong input please enter 1 or 2.");
                     }
                     if (answer == 1) {
-                        BufferedReader foodInput = new BufferedReader( new InputStreamReader(System.in));
-                        System.out.println("Setting preferences...");
+                        BufferedReader choicesInput = new BufferedReader( new InputStreamReader(System.in));
+                        System.out.println("Setting food preferences...");
                         System.out.println("Please enter each choice's number separated by commas.");
                         System.out.println("Food Choices:");
                         System.out.println("1) Italian");
@@ -46,13 +46,37 @@ public class UserInterface {
                         System.out.println("8) Other");
                         while(!stop){
                             try{
-                                food = foodInput.readLine().split(",");
+                                food = choicesInput.readLine().split(",");
                                 pref = new preferences();
                                 pref.addFood(pref.convertInput(food));
                                 stop = true;
                             }catch (IOException e){
                                 System.out.println("Wrong input please enter only numbers separated by commas.");
                                 System.out.println("Ex. 1,2,3,4");
+                            }
+                            System.out.println("Setting events preferences...");
+                            System.out.println("Please enter each choice's number separated by commas.");
+                            System.out.println("Food Choices:");
+                            System.out.println("1) Ice Skating");
+                            System.out.println("2) Hiking");
+                            System.out.println("3) Shopping");
+                            System.out.println("4) Movie");
+                            System.out.println("5) At Home Hangout");
+                            System.out.println("6) Bowling");
+                            System.out.println("7) Arcane");
+                            System.out.println("8) Amusement Park");
+                            System.out.println("9) Park");
+                            System.out.println("10) other");
+                            while(!stop){
+                                try{
+                                    events = choicesInput.readLine().split(",");
+                                    pref = new preferences();
+                                    pref.addEvents(pref.convertInput(events));
+                                    stop = true;
+                                }catch (IOException e){
+                                    System.out.println("Wrong input please enter only numbers separated by commas.");
+                                    System.out.println("Ex. 1,2,3,4");
+                                }
                             }
                         }
                     } else if (answer == 2) {
